@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod # pod를 생성할 것.
+metadata:
+  name: building-apps-pod # 아래서 가져온 도커이미지가 이 이름의 pod로 만들어진다.
+  labels:
+    app: kubeacademy
+spec:
+  containers:
+  - name: building-apps-container # 컨테이너 이름 지정
+    image: lander2k2/building-apps:0.1
